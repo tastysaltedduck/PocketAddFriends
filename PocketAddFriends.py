@@ -6,7 +6,7 @@ from pynput.keyboard import Controller, Key
 #pip install pynput
 #pip install opencv-python
 
-os.chdir('B:\Work\Scripts')
+os.chdir('B:\Work\Scripts\PocketAddFriends')
 keyboard = Controller()
 timeDelay = 1
 time.sleep(timeDelay)
