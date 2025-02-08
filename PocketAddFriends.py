@@ -66,6 +66,18 @@ with open('ids.txt') as file:
         except:
             pass
 
+        #Received request
+        try:
+            receivedRequestPoint = pyautogui.locateCenterOnScreen('receivedRequest.png', confidence=0.8)
+            receivedRequestX, receivedRequestY = receivedRequestPoint
+            pyautogui.click(receivedRequestX, receivedRequestY)
+            time.sleep(timeDelay)
+            pyautogui.click(xButtonX, xButtonY)
+            time.sleep(timeDelay)
+            continue
+        except:
+            pass
+
         #Send friend request
         try:
             sendFriendRequestPoint = pyautogui.locateCenterOnScreen('sendFriendRequest.png', confidence=0.8)
